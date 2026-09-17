@@ -22,7 +22,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
               <p>
                 We respect your store's privacy. Product catalog data and shopper session details stay private to your store and are never sold.
               </p>
-              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. We Never Sell Your Data</h5>
+              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. No Account, No Login</h5>
               <p>
                 We do not sell your store's product data, shopper session data, or contact information to advertisers or other retailers.
               </p>
@@ -102,7 +102,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
                 Have a question about setting up your kiosk, your store's catalog, or a shopper session? We're here to help.
               </p>
               <div className="p-4 rounded-xl glass-panel space-y-1 font-mono">
-                <div className="font-bold" style={{ color: themeConfig.primaryAccent }}>Help Desk</div>
+                <div className="font-bold" style={{ color: themeConfig.primaryAccent }}>Get in Touch</div>
                 <div>support@stylecue.ai</div>
                 <div className="text-[11px] opacity-70">We're a small team in early access — we'll get back to you as quickly as we can</div>
               </div>
