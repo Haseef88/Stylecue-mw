@@ -15,13 +15,13 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onStartQuiz })
       <div className="text-center mb-16 space-y-4">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border text-xs uppercase tracking-widest font-mono">
           <Sparkles className="w-3.5 h-3.5" style={{ color: themeConfig.primaryAccent }} />
-          Why People Love StyleCue
+          What Your Customers Get
         </div>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
           Smarter, Easier <span style={{ color: themeConfig.primaryAccent }}>Everyday Styling</span>
         </h2>
         <p className="text-base md:text-lg opacity-80 max-w-2xl mx-auto font-normal">
-          We help you look your best every day with outfit suggestions tailored to your taste, body type, and budget.
+          Give every shopper on your floor outfit suggestions tailored to their taste, body type, and budget — using your own inventory.
         </p>
       </div>
 
@@ -65,7 +65,7 @@ export const BenefitsSection: React.FC<BenefitsSectionProps> = ({ onStartQuiz })
                 className="text-xs font-bold font-mono uppercase tracking-wider flex items-center gap-1.5 group-hover:gap-2.5 transition-all cursor-pointer"
                 style={{ color: themeConfig.primaryAccent }}
               >
-                <span>Try It Yourself</span>
+                <span>See It In Action</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>

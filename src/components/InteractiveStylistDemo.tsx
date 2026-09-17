@@ -66,7 +66,7 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
           Try the <span style={{ color: themeConfig.primaryAccent }}>AI Stylist</span> Demo
         </h2>
         <p className="text-base md:text-lg opacity-80 max-w-2xl mx-auto font-normal">
-          Pick your occasion and style below to see how our AI creates full matching outfits with items in stock right now.
+          This is exactly what your customers see at the kiosk. Pick an occasion and style below to see the AI build a full matching outfit.
         </p>
       </div>
 
@@ -184,7 +184,7 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
               )}
             </button>
             <p className="text-[11px] opacity-60 text-center mt-2.5 font-mono">
-              Checks live item availability directly against a store's real inventory
+              Matches against a store's own live inventory in real time
             </p>
           </div>
         </div>
@@ -255,7 +255,7 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
                         <div className="flex items-center gap-2 mt-0.5 text-[11px] opacity-70">
                           <span>{item.brand}</span>
                           <span>•</span>
-                          <span style={{ color: themeConfig.secondaryAccent }} className="font-medium">{item.retailer}</span>
+                          <span className="text-emerald-400 font-medium">In Stock</span>
                         </div>
                         <div className="text-xs font-bold mt-1 font-mono">
                           ${item.price.toLocaleString()}
@@ -296,14 +296,14 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
           {/* Action Row */}
           <div className="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-xs opacity-70">
-              All items verified in stock in real time, matched to the store's own catalog.
+              This is a sample outfit — items shown come from a store's own kiosk inventory.
             </div>
             <button
               onClick={onOpenQuiz}
               className="w-full sm:w-auto text-slate-900 px-6 py-2.5 rounded-full text-xs font-bold hover:opacity-90 transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
               style={{ backgroundColor: themeConfig.primaryAccent }}
             >
-              <span>Take the 1-Minute Quiz</span>
+              <span>Try the Full Quiz Experience</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>

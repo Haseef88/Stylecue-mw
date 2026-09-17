@@ -22,7 +22,7 @@ export const FaqSection: React.FC = () => {
           Frequently Asked <span style={{ color: themeConfig.primaryAccent }}>Questions</span>
         </h2>
         <p className="text-base md:text-lg opacity-80 max-w-2xl mx-auto font-normal">
-          Simple answers about how StyleCue works, sizing accuracy, online stores, and privacy.
+          Simple answers about how StyleCue works, sizing accuracy, kiosk setup, and privacy.
         </p>
       </div>
 

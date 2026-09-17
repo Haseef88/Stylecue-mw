@@ -21,15 +21,15 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onStartQuiz }) => {
         <div className="relative z-10 max-w-3xl mx-auto space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border text-xs font-mono font-bold uppercase tracking-wider">
             <Sparkles className="w-3.5 h-3.5" style={{ color: themeConfig.primaryAccent }} />
-            Free Style Recommendation
+            Now Onboarding Pilot Retailers
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-            Find Your Next Outfit in <span style={{ color: themeConfig.primaryAccent }}>60 Seconds</span>
+            See StyleCue on <span style={{ color: themeConfig.primaryAccent }}>Your Shop Floor</span>
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl opacity-80 max-w-xl mx-auto leading-relaxed">
-            See how StyleCue matches shoppers to complete, in-stock outfits — try the demo below to experience it yourself.
+            We're working directly with early retail partners in Sri Lanka to bring AI styling kiosks to their stores. Book a call and see it live.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -38,7 +38,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onStartQuiz }) => {
               className="w-full sm:w-auto text-slate-900 px-10 py-4 rounded-full font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-2xl hover:opacity-90 active:scale-95 cursor-pointer"
               style={{ backgroundColor: themeConfig.primaryAccent }}
             >
-              <span>Take Free Style Quiz</span>
+              <span>Book a Demo</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -46,13 +46,13 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onStartQuiz }) => {
           {/* Trust indicators */}
           <div className="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs opacity-75 font-mono">
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> Free for shoppers
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> No cost to explore a pilot
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> Matched to real store stock
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> Built around your own inventory
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> No account needed
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> Hands-on setup with our team
             </span>
           </div>
         </div>
