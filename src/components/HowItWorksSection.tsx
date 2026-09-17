@@ -96,7 +96,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
               <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
                 <Check className="w-3.5 h-3.5" />
               </div>
-              <span className="opacity-90">Accurate sizing across 400+ popular clothing brands</span>
+              <span className="opacity-90">Matched directly against the store's own real-time stock</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
               <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
@@ -148,7 +148,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
               <span className="text-[10px] opacity-75 font-mono">Live Inventory Check</span>
             </div>
             <p className="text-xs opacity-90 leading-normal">
-              Connected in real time with top online stores so your size is ready to order.
+              Connected in real time with the store's own inventory, so your size is ready to try on.
             </p>
           </div>
         </div>

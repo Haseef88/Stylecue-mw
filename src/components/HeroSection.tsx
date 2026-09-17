@@ -15,8 +15,7 @@ const HERO_LOOK_PRESETS = [
     score: 98,
     desc: 'Lightweight utility jacket with comfortable matching cargo pants and gold jewelry.',
     tag: 'Casual Streetwear',
-    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80',
-    pieces: 'Helmut Atelier • Acne Studios • FARFETCH'
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'riviera',
@@ -24,8 +23,7 @@ const HERO_LOOK_PRESETS = [
     score: 99,
     desc: 'Smooth silk evening slip dress with a warm cashmere coat and gold clutch bag.',
     tag: 'Dinner & Parties',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80',
-    pieces: 'The Row • Bottega Veneta • Net-a-Porter'
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 'executive',
@@ -33,8 +31,7 @@ const HERO_LOOK_PRESETS = [
     score: 96,
     desc: 'Sharp tailored black blazer paired with comfortable wide-leg trousers.',
     tag: 'Work & Meetings',
-    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=800&q=80',
-    pieces: 'Mugler • Totême • SSENSE'
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=800&q=80'
   }
 ];
 
@@ -155,7 +152,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Upper Right Boutique Status Pill */}
           <div className="absolute top-6 right-6 glass-panel-elevated px-4 py-2 rounded-full flex items-center gap-2 border shadow-lg text-xs font-semibold backdrop-blur-xl">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: themeConfig.primaryAccent }}></span>
-            <span>In Stock at Partner Stores</span>
+            <span>Matched to Real Store Stock</span>
           </div>
 
           {/* Floating UI Element */}
@@ -199,8 +196,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Trust & Performance Bar */}
       <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div className="p-3">
-          <div className="text-2xl md:text-3xl font-bold font-mono">4.8M+</div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Items Checked in Real Time</div>
+          <div className="text-2xl md:text-3xl font-bold font-mono">Live</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Checked Against Real Store Stock</div>
         </div>
         <div className="p-3">
           <div className="text-2xl md:text-3xl font-bold font-mono" style={{ color: themeConfig.primaryAccent }}>
@@ -209,14 +206,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Size & Sizing Check</div>
         </div>
         <div className="p-3">
-          <div className="text-2xl md:text-3xl font-bold font-mono">98%</div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Client Fit Satisfaction</div>
+          <div className="text-2xl md:text-3xl font-bold font-mono">No Login</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Anonymous, One-Time Sessions</div>
         </div>
         <div className="p-3">
           <div className="text-2xl md:text-3xl font-bold font-mono" style={{ color: themeConfig.secondaryAccent }}>
-            45+
+            New
           </div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Trusted Partner Stores</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Now Onboarding Pilot Stores</div>
         </div>
       </div>
     </section>

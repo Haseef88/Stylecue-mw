@@ -1,6 +1,5 @@
 import React from 'react';
 import { Store, TrendingUp, RefreshCw, ArrowRight, Code } from 'lucide-react';
-import { RETAILER_PARTNERS } from '../data/mockData';
 import { useTheme } from '../context/ThemeContext';
 
 interface RetailersSectionProps {
@@ -25,36 +24,29 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
         </p>
       </div>
 
-      {/* Retail Partner Grid */}
+      {/* Who StyleCue Is Built For */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
-        {RETAILER_PARTNERS.map((partner) => (
+        {['Boutique Stores', 'Fashion Chains', 'Department Stores', 'Streetwear Shops', 'Formalwear Outlets', 'Multi-Brand Retailers'].map((category) => (
           <div
-            key={partner.id}
-            className="glass-panel p-5 rounded-2xl border hover:border-opacity-100 transition-all text-center group flex flex-col justify-between shadow-md"
+            key={category}
+            className="glass-panel p-5 rounded-2xl border hover:border-opacity-100 transition-all text-center group flex items-center justify-center shadow-md"
           >
-            <div className="h-10 flex items-center justify-center">
-              <span className="font-bold text-sm tracking-widest uppercase transition-colors" style={{ color: themeConfig.primaryAccent }}>
-                {partner.name}
-              </span>
-            </div>
-            <div className="mt-3 pt-3 border-t border-white/5 space-y-1">
-              <div className="text-[10px] opacity-60 font-mono">{partner.stockSyncSpeed}</div>
-              <div className="text-[11px] font-semibold opacity-80">{partner.inventoryCount}</div>
-            </div>
+            <span className="font-bold text-xs tracking-widest uppercase transition-colors" style={{ color: themeConfig.primaryAccent }}>
+              {category}
+            </span>
           </div>
         ))}
       </div>
 
-      {/* Retail Metric Cards */}
+      {/* Retail Value Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div className="glass-panel-elevated p-8 rounded-3xl border relative overflow-hidden shadow-xl">
           <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
             <TrendingUp className="w-6 h-6" />
           </div>
-          <div className="text-4xl font-bold font-mono mb-2">+38.2%</div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Higher Order Value</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Bigger Basket Size</h4>
           <p className="text-sm opacity-80">
-            Shoppers buy complete matching outfits rather than just single items.
+            Shoppers get matched to complete outfits instead of single items, encouraging larger purchases.
           </p>
         </div>
 
@@ -62,10 +54,9 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
           <div className="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6">
             <RefreshCw className="w-6 h-6" />
           </div>
-          <div className="text-4xl font-bold font-mono mb-2">-41.6%</div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Fewer Item Returns</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Fewer Sizing Mistakes</h4>
           <p className="text-sm opacity-80">
-            Accurate size recommendations reduce fit issues and sizing confusion.
+            Recommendations are matched against real stock and sizing, cutting down on fit-related issues.
           </p>
         </div>
 
@@ -76,10 +67,9 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
           >
             <Code className="w-6 h-6" />
           </div>
-          <div className="text-4xl font-bold font-mono mb-2">&lt; 1 Day</div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Quick & Simple Setup</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Simple Store Onboarding</h4>
           <p className="text-sm opacity-80">
-            Easily integrates with Shopify, Salesforce, WooCommerce, or custom online storefronts.
+            We work with your team to connect your existing product catalog to the kiosk.
           </p>
         </div>
       </div>

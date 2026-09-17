@@ -184,7 +184,7 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
               )}
             </button>
             <p className="text-[11px] opacity-60 text-center mt-2.5 font-mono">
-              Checks live item availability across FARFETCH, SSENSE, and Net-a-Porter
+              Checks live item availability directly against a store's real inventory
             </p>
           </div>
         </div>
@@ -296,7 +296,7 @@ export const InteractiveStylistDemo: React.FC<InteractiveStylistDemoProps> = ({ 
           {/* Action Row */}
           <div className="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="text-xs opacity-70">
-              All items verified in stock across partner stores.
+              All items verified in stock in real time, matched to the store's own catalog.
             </div>
             <button
               onClick={onOpenQuiz}

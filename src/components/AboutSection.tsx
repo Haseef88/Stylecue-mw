@@ -24,25 +24,25 @@ export const AboutSection: React.FC = () => {
           </p>
 
           <p className="text-sm opacity-70 leading-relaxed">
-            By studying clothes sizing, cuts, colors, and current fashion trends, our AI helps you put together outfits you'll love wearing — with direct links to buy items in your exact size from trusted online stores.
+            By studying clothes sizing, cuts, colors, and current fashion trends, our AI helps you put together outfits you'll love — matched directly against what's actually available on the shop floor, in your size, right now.
           </p>
 
           {/* Core Values / Stats */}
           <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/10">
             <div className="p-4 rounded-2xl glass-panel border border-white/5 space-y-1">
               <div className="text-2xl font-bold font-mono" style={{ color: themeConfig.primaryAccent }}>
-                100%
+                Live
               </div>
-              <div className="text-xs font-semibold">Verified Online Stores</div>
-              <div className="text-[11px] opacity-60">Authentic clothing from authorized fashion brands and top retailers</div>
+              <div className="text-xs font-semibold">Real Store Inventory</div>
+              <div className="text-[11px] opacity-60">Every recommendation checks a store's own current stock, not a generic catalog</div>
             </div>
 
             <div className="p-4 rounded-2xl glass-panel border border-white/5 space-y-1">
               <div className="text-2xl font-bold font-mono" style={{ color: themeConfig.secondaryAccent }}>
-                400+
+                0
               </div>
-              <div className="text-xs font-semibold">Brand Size Guides</div>
-              <div className="text-[11px] opacity-60">Accurate sizing across US, UK, European, and Japanese brands</div>
+              <div className="text-xs font-semibold">Data Kept After Your Visit</div>
+              <div className="text-[11px] opacity-60">No login, no saved history — session details are cleared when you're done</div>
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export const AboutSection: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               <div className="absolute bottom-3 left-3 text-[11px] font-mono text-white/90 font-semibold">
-                Paris Fitting Session
+                Fit Testing
               </div>
             </div>
 

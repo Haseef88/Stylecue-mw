@@ -1,4 +1,4 @@
-import { LookbookLook, RetailerPartner, Testimonial, RunwaySnapshot } from '../types';
+import { LookbookLook, RunwaySnapshot } from '../types';
 
 export const HERO_IMAGE_URL = 'https://lh3.googleusercontent.com/aida-public/AB6AXuA8FW2NSBc3h0o5w7CPe-tiP0B4J9MDrC2ubpPh7NUjKka2DX-1FEzinUdERFqvhJPh6LE7arzJ8U59dZNkssxU0oim7tN9V-3V7C48kV2uBfUjAIc0zE8EEWMQas6qc3JvnNP2uY9Ui5d2ObfhnMP4e7oB-_4x6GSwwKKj7ycOsSz2a-FGXNX-LTBtuCLDRcUGoRwdkSEswUHCRiS6-6Ry2CbEcqtMQEHvdCuD9IcIPoJf2g22avE6sw';
 export const LOGO_IMAGE_URL = '/logo.png';
@@ -29,8 +29,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-1',
         name: 'Cropped Utility Jacket',
-        brand: 'Helmut Atelier',
-        retailer: 'FARFETCH',
+        brand: 'Nordic Line',
+        retailer: 'Urban Loom Co.',
         price: 680,
         image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -40,8 +40,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-2',
         name: 'Soft Silk Bralette Top',
-        brand: 'Khaite',
-        retailer: 'SSENSE',
+        brand: 'Soho Basics',
+        retailer: 'Urban Loom Co.',
         price: 420,
         image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80',
         category: 'top',
@@ -51,8 +51,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-3',
         name: 'High-Waist Cargo Trousers',
-        brand: 'Acne Studios',
-        retailer: 'Net-a-Porter',
+        brand: 'Terra Denim',
+        retailer: 'Urban Loom Co.',
         price: 590,
         image: 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=600&q=80',
         category: 'bottom',
@@ -97,8 +97,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-5',
         name: 'Silk Slip Maxi Dress',
-        brand: 'The Row',
-        retailer: 'Net-a-Porter',
+        brand: 'Aurelie Atelier',
+        retailer: "Evelyn's Fashion House",
         price: 1890,
         image: 'https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -108,8 +108,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-6',
         name: 'Cashmere Winter Evening Coat',
-        brand: 'Brunello Cucinelli',
-        retailer: 'Saks Fifth Avenue',
+        brand: 'Cashmere & Co.',
+        retailer: "Evelyn's Fashion House",
         price: 3450,
         image: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -119,8 +119,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-7',
         name: 'Gold Metal Evening Clutch',
-        brand: 'Bottega Veneta',
-        retailer: 'FARFETCH',
+        brand: 'Vela Leather Co.',
+        retailer: "Evelyn's Fashion House",
         price: 2600,
         image: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80',
         category: 'accessories',
@@ -153,8 +153,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-8',
         name: 'Tailored Hourglass Blazer',
-        brand: 'Mugler Studio',
-        retailer: 'SSENSE',
+        brand: 'Sharpline Studio',
+        retailer: "The Tailor's Room",
         price: 1450,
         image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -164,8 +164,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-9',
         name: 'Pleated Wide-Leg Trousers',
-        brand: 'Totême',
-        retailer: 'Nordstrom',
+        brand: 'Meridian Basics',
+        retailer: "Evelyn's Fashion House",
         price: 620,
         image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80',
         category: 'bottom',
@@ -196,8 +196,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-10',
         name: '3-in-1 Weatherproof Parka',
-        brand: 'Sacai',
-        retailer: 'StyleCue Exclusive',
+        brand: 'Northline Apparel',
+        retailer: 'North Point Outfitters',
         price: 1280,
         image: 'https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -229,8 +229,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-11',
         name: '100% Cashmere Blanket Cape',
-        brand: 'Loro Piana',
-        retailer: 'Net-a-Porter',
+        brand: 'Alpine Wool Co.',
+        retailer: 'Cloudknit Studio',
         price: 2850,
         image: 'https://images.unsplash.com/photo-1434389677669-e08b4cac3105?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -240,8 +240,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-12',
         name: 'Silk-Wool Relaxed Pants',
-        brand: 'Khaite',
-        retailer: 'SSENSE',
+        brand: 'Cloud Knitwear',
+        retailer: 'Cloudknit Studio',
         price: 890,
         image: 'https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=600&q=80',
         category: 'bottom',
@@ -272,8 +272,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-13',
         name: 'Satin Collar Smoking Blazer',
-        brand: 'Saint Laurent',
-        retailer: 'FARFETCH',
+        brand: 'Noir Atelier',
+        retailer: 'Midnight Formalwear',
         price: 3200,
         image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -304,8 +304,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-14',
         name: 'Gilded Bustier Long Dress',
-        brand: 'Schiaparelli',
-        retailer: 'StyleCue Exclusive',
+        brand: 'Lumen House',
+        retailer: 'Gala & Co.',
         price: 6400,
         image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80',
         category: 'outerwear',
@@ -336,8 +336,8 @@ export const CURATED_LOOKS: LookbookLook[] = [
       {
         id: 'item-15',
         name: 'Charcoal Wool Overshirt',
-        brand: 'Studio Nicholson',
-        retailer: 'SSENSE',
+        brand: 'Field & Co.',
+        retailer: 'Weekend Standard',
         price: 495,
         image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
         category: 'top',
@@ -374,7 +374,7 @@ export const RUNWAY_SNAPSHOTS: RunwaySnapshot[] = [
   {
     id: 'runway-3',
     title: 'Tokyo Streetwear Preview',
-    designer: 'Sacai x StyleCue',
+    designer: 'Studio Kirin',
     location: 'Tokyo, Japan',
     season: 'Resort 2026',
     image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
@@ -385,7 +385,7 @@ export const RUNWAY_SNAPSHOTS: RunwaySnapshot[] = [
   {
     id: 'runway-4',
     title: 'New York City Suit Preview',
-    designer: 'Khaite Studio',
+    designer: 'Studio Ferrand',
     location: 'New York, USA',
     season: 'Fall Tailoring',
     image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=800&q=80',
@@ -396,7 +396,7 @@ export const RUNWAY_SNAPSHOTS: RunwaySnapshot[] = [
   {
     id: 'runway-5',
     title: 'Kyoto Soft Texture Collection',
-    designer: 'Issey Miyake Archives',
+    designer: 'Kyoto Textile Studio',
     location: 'Kyoto, Japan',
     season: 'Capsule 2026',
     image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80',
@@ -407,115 +407,13 @@ export const RUNWAY_SNAPSHOTS: RunwaySnapshot[] = [
   {
     id: 'runway-6',
     title: 'London Evening Salon',
-    designer: 'Alexander McQueen Atelier',
+    designer: 'Atelier Rousseau',
     location: 'London, UK',
     season: 'Winter Collection',
     image: 'https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80',
     category: 'Evening Jacket',
     palette: ['#0A0A0E', '#6B21A8', '#E5E7EB'],
     stylistNote: 'Classic black blazer with velvet collar and crystal buttons.'
-  }
-];
-
-export const RETAILER_PARTNERS: RetailerPartner[] = [
-  {
-    id: 'ret-1',
-    name: 'FARFETCH',
-    logo: 'FARFETCH',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80',
-    category: 'Global Fashion Marketplace',
-    integrationType: 'Live Store Inventory Connection',
-    stockSyncSpeed: 'Updated instantly',
-    inventoryCount: 'Over 1.2M items'
-  },
-  {
-    id: 'ret-2',
-    name: 'Net-a-Porter',
-    logo: 'NET-A-PORTER',
-    image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80',
-    category: 'Designer Clothing & Accessories',
-    integrationType: 'New Arrivals & In-Stock Sync',
-    stockSyncSpeed: 'Real-time updates',
-    inventoryCount: 'Over 800k items'
-  },
-  {
-    id: 'ret-3',
-    name: 'SSENSE',
-    logo: 'SSENSE',
-    image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80',
-    category: 'Modern Streetwear & Designer Wear',
-    integrationType: 'Direct Store Sync',
-    stockSyncSpeed: 'Instant stock check',
-    inventoryCount: 'Over 650k items'
-  },
-  {
-    id: 'ret-4',
-    name: 'Saks Fifth Avenue',
-    logo: 'SAKS FIFTH AVENUE',
-    image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=600&q=80',
-    category: 'Luxury Department Store',
-    integrationType: 'Store & Online Stock Feed',
-    stockSyncSpeed: 'Fast automated check',
-    inventoryCount: 'Over 950k items'
-  },
-  {
-    id: 'ret-5',
-    name: 'Nordstrom',
-    logo: 'NORDSTROM',
-    image: 'https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=600&q=80',
-    category: 'Designer & Everyday Brands',
-    integrationType: 'Local Size & Store Delivery',
-    stockSyncSpeed: 'Fast stock check',
-    inventoryCount: 'Over 1.4M items'
-  },
-  {
-    id: 'ret-6',
-    name: 'Matches Fashion',
-    logo: 'MATCHES',
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=600&q=80',
-    category: 'Curated Boutique Brands',
-    integrationType: 'Runway & Capsule Collection Sync',
-    stockSyncSpeed: 'Real-time updates',
-    inventoryCount: 'Over 450k items'
-  }
-];
-
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 't1',
-    quote: "StyleCue makes shopping online easy and fun. The AI actually understands what styles look great on me, and I never waste time looking at clothes that don't fit.",
-    author: "Nanda Malini",
-    title: "Fashion Stylist & Writer",
-    outletOrAvatar: "VOGUE TECH",
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
-    isPress: true
-  },
-  {
-    id: 't2',
-    quote: "I haven't had to spend hours shopping in stores for months. In just a few seconds, StyleCue puts together complete outfits for my work trips, and everything fits when it arrives.",
-    author: "Aaqib Jezeel",
-    title: "Clothing Brand Owner",
-    outletOrAvatar: "Client in Sri Lanka",
-    avatarUrl: '/Aaqib.jpeg',
-    isPress: false
-  },
-  {
-    id: 't3',
-    quote: "What I love most is that every outfit suggested is in stock in my size right now. You never fall in love with a piece only to find out it is sold out.",
-    author: "Chandrika Jayawardena",
-    title: "Style & Tech Journalist",
-    outletOrAvatar: "ELLE DIGITAL",
-    avatarUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80',
-    isPress: true
-  },
-  {
-    id: 't4',
-    quote: "Our store returns dropped significantly because customers are getting the right sizes and outfits matched to their true body shape on the very first try.",
-    author: "Paul Walker",
-    title: "Online Store Director",
-    outletOrAvatar: "FORBES",
-    avatarUrl: '/paul.png',
-    isPress: true
   }
 ];
 
@@ -534,11 +432,11 @@ export const STYLING_BENEFITS = [
     id: 'b2',
     iconName: 'inventory_2',
     title: 'In-Stock in Your Size',
-    description: 'We connect directly to top online stores, making sure every item shown is available in your size right now.',
-    stat: '4.8M+',
-    statLabel: 'Items checked in real time',
-    imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80',
-    details: 'Never feel let down by out-of-stock sizes. We check store inventories constantly across top brands.'
+    description: "The kiosk checks directly against that store's own inventory, so every item shown is available in your size right now.",
+  stat: 'Live',
+  statLabel: 'Checked against real store stock',
+  imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80',
+  details: 'No more disappointment from a suggested size or item that turns out to be sold out — recommendations only ever come from what the store actually has.'
   },
   {
     id: 'b3',
@@ -580,7 +478,7 @@ export const HOW_IT_WORKS_STEPS = [
   {
     step: '04',
     title: 'Automated Staff Notification',
-    subtitle: 'Buy your favorites in one click',
+    subtitle: 'Staff brings your picks to try on',
     desc: 'A session ID is created and sent instantly to sales staff, who fetch the exact items to the fitting room.',
     badge: 'Fast & Secure',
     imageUrl: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=800&q=80'
@@ -590,18 +488,18 @@ export const HOW_IT_WORKS_STEPS = [
 export const FAQ_ITEMS = [
   {
     q: "How does StyleCue know which size will fit me?",
-    a: "We check the sizing guides and customer fit reviews from over 400 clothing brands. By using your basic measurements and fit preferences, we recommend the exact size that will fit you best."
+    a: "You enter your measurements or standard size (S/M/L/XL) at the kiosk, and recommendations are matched against the store's own sizing and stock — nothing is guessed from a generic chart."
   },
   {
-    q: "Can I use clothes I already have in my closet?",
-    a: "Yes! You can upload photos of your favorite shirts, jackets, or pants. Our AI will build fresh new outfits combining your owned clothes with new pieces."
+    q: "Do I need to create an account to use the kiosk?",
+    a: "No. Shoppers never log in — it's a one-time, anonymous session per visit, and your measurements and preferences are deleted the moment the session ends."
   },
   {
-    q: "Is StyleCue free to use?",
-    a: "Yes, StyleCue is completely free to take style quizzes, get outfit ideas, and shop items. We also offer an optional VIP membership ($29/month) for unlimited personalized outfit packs and direct stylist advice."
+    q: "Is there a cost for shoppers to use the kiosk?",
+    a: "No — using the kiosk is completely free for shoppers. StyleCue is a service the store subscribes to, not something shoppers pay for."
   },
   {
-    q: "How do clothing stores and brands partner with StyleCue?",
-    a: "Stores can easily connect their product catalogs with our system to show their in-stock clothes to shoppers looking for ready-to-wear outfits."
+    q: "How do clothing stores partner with StyleCue?",
+    a: "Stores connect their own product catalog to the kiosk, so every recommendation comes from what's actually on their shelves. Reach out through the 'For Retailers' section above to talk to our team about a pilot."
   }
 ];

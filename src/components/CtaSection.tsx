@@ -29,7 +29,7 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onStartQuiz }) => {
           </h2>
 
           <p className="text-base sm:text-lg md:text-xl opacity-80 max-w-xl mx-auto leading-relaxed">
-            Join over 85,000 shoppers using StyleCue to discover great clothes, matching accessories, and the right fit every time.
+            See how StyleCue matches shoppers to complete, in-stock outfits — try the demo below to experience it yourself.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -46,13 +46,13 @@ export const CtaSection: React.FC<CtaSectionProps> = ({ onStartQuiz }) => {
           {/* Trust indicators */}
           <div className="pt-8 flex flex-wrap items-center justify-center gap-6 text-xs opacity-75 font-mono">
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> 100% Free to use
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> Free for shoppers
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> Buy directly from trusted stores
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> Matched to real store stock
             </span>
             <span className="flex items-center gap-1.5">
-              <Check className="w-3.5 h-3.5 text-emerald-400" /> Guaranteed size matching
+              <Check className="w-3.5 h-3.5 text-emerald-400" /> No account needed
             </span>
           </div>
         </div>

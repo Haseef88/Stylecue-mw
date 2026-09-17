@@ -20,15 +20,15 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
           body: (
             <div className="space-y-4 text-xs leading-relaxed opacity-80">
               <p>
-                We respect your personal privacy. Your sizing details, color preferences, and saved outfits are protected and never sold.
+                We respect your privacy. Using the kiosk does not require an account, and your session data is never sold.
               </p>
-              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. We Never Sell Your Data</h5>
+              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. No Account, No Login</h5>
               <p>
-                We do not sell your personal measurements, browsing history, or email address to advertisers.
+                You never create an account or log in to use the kiosk. Each visit is a one-time, anonymous session.
               </p>
-              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>2. Secure Sizing Storage</h5>
+              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>2. Your Data Is Deleted After Your Visit</h5>
               <p>
-                Your measurements are saved securely to your private profile so your size recommendations are always accurate.
+                Your measurements, preferences, and selections are used only to generate recommendations during your session, and are automatically deleted once your session ends. Nothing is saved to a profile.
               </p>
             </div>
           )
@@ -40,15 +40,15 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
           body: (
             <div className="space-y-4 text-xs leading-relaxed opacity-80">
               <p>
-                By using StyleCue, you agree to our standard shopping and outfit discovery terms.
+                By using the StyleCue kiosk, you agree to these simple terms.
               </p>
-              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. Genuine Items Only</h5>
+              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>1. Recommendations From Real Store Stock</h5>
               <p>
-                All recommended clothes link directly to verified official brands and licensed online retailers.
+                All recommended items are pulled directly from the store's own current inventory and pricing.
               </p>
-              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>2. Live Prices & Availability</h5>
+              <h5 className="font-bold text-sm" style={{ color: themeConfig.primaryAccent }}>2. In-Store Purchase Only</h5>
               <p>
-                Item prices and in-stock sizes are checked continuously. Final payment and checkout occur on the official store website.
+                Confirming a recommendation notifies store staff to bring the selected items to you for trying on. Payment happens in-store, in person, the same as any other purchase there.
               </p>
             </div>
           )
@@ -60,11 +60,11 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
           body: (
             <div className="space-y-4 text-xs leading-relaxed opacity-80">
               <p>
-                We use cookies to save your theme preferences (light or dark mode) and remember your saved outfits.
+                We use minimal cookies to remember your display theme (light or dark mode) on this website. The in-store kiosk itself does not use cookies to track you between visits.
               </p>
               <div className="p-4 rounded-xl glass-panel space-y-2">
                 <div className="flex items-center justify-between font-bold text-xs">
-                  <span>Theme & Sizing Preferences</span>
+                  <span>Website Theme Preference</span>
                   <span className="text-emerald-400 font-mono">Always Active</span>
                 </div>
                 <div className="flex items-center justify-between font-bold text-xs">
@@ -82,12 +82,11 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
           body: (
             <div className="space-y-4 text-xs leading-relaxed opacity-80">
               <p>
-                For press inquiries, brand logos, high-resolution photos, or interview requests:
+                For press inquiries, brand assets, or interview requests, reach out to our team directly:
               </p>
               <div className="p-4 rounded-xl glass-panel space-y-1 font-mono">
                 <div className="font-bold" style={{ color: themeConfig.primaryAccent }}>Press Relations</div>
                 <div>press@stylecue.ai</div>
-                <div>New York • London • Paris • Tokyo</div>
               </div>
             </div>
           )
@@ -99,12 +98,11 @@ export const InfoModal: React.FC<InfoModalProps> = ({ type, onClose }) => {
           body: (
             <div className="space-y-4 text-xs leading-relaxed opacity-80">
               <p>
-                Have a question about sizes, outfit recommendations, or need help with a purchase? We are here to help.
+                Have a question about the kiosk experience, or interested in bringing StyleCue to your store? We're here to help.
               </p>
               <div className="p-4 rounded-xl glass-panel space-y-1 font-mono">
-                <div className="font-bold" style={{ color: themeConfig.primaryAccent }}>Help Desk</div>
+                <div className="font-bold" style={{ color: themeConfig.primaryAccent }}>Get in Touch</div>
                 <div>support@stylecue.ai</div>
-                <div className="text-[11px] opacity-70">Typical response time: under 1 hour</div>
               </div>
             </div>
           )
