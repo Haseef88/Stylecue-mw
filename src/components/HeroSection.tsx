@@ -13,25 +13,28 @@ const HERO_LOOK_PRESETS = [
     id: 'urban',
     title: 'Street Style Outfit',
     score: 98,
-    desc: 'Lightweight utility jacket with comfortable matching cargo pants and gold jewelry.',
+    desc: 'Lightweight utility jacket paired with matching cargo pants — assembled automatically from the store\'s own in-stock inventory.',
     tag: 'Casual Streetwear',
-    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80',
+    pieces: 'Sample kiosk match • In stock at this store'
   },
   {
     id: 'riviera',
     title: 'Evening Silk Dress',
     score: 99,
-    desc: 'Smooth silk evening slip dress with a warm cashmere coat and gold clutch bag.',
+    desc: 'Smooth silk evening slip dress with a coat and clutch, matched from items already on the shop floor.',
     tag: 'Dinner & Parties',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80',
+    pieces: 'Sample kiosk match • In stock at this store'
   },
   {
     id: 'executive',
     title: 'Modern Business Suit',
     score: 96,
-    desc: 'Sharp tailored black blazer paired with comfortable wide-leg trousers.',
+    desc: 'Sharp tailored blazer paired with wide-leg trousers, sized to the shopper\'s measurements at the kiosk.',
     tag: 'Work & Meetings',
-    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=800&q=80'
+    image: 'https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?auto=format&fit=crop&w=800&q=80',
+    pieces: 'Sample kiosk match • In stock at this store'
   }
 ];
 
@@ -61,17 +64,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Subtle Live Status Pill */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-panel border text-xs font-semibold">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>Online AI Stylist</span>
+            <span>AI Styling Kiosks</span>
             <span className="opacity-40">•</span>
-            <span style={{ color: themeConfig.primaryAccent }}>Checks Real Store Stock & Sizing</span>
+            <span style={{ color: themeConfig.primaryAccent }}>Built for Retail Fashion Stores</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.12]">
-            Your <span style={{ color: themeConfig.primaryAccent }}>Personal Stylist</span>, Powered by AI.
+            Give Every Shopper a <span style={{ color: themeConfig.primaryAccent }}>Personal Stylist</span>, On Your Shop Floor.
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl opacity-80 leading-relaxed max-w-xl font-normal">
-            Get personalized outfit ideas chosen for your body shape, taste, and budget. Every piece is in stock in your size and ready to wear.
+            StyleCue is a customized AI styling kiosk built for retail fashion stores. Shoppers get outfit recommendations matched to their body and taste, using your store's own in-stock inventory — no app download, no waiting for a stylist to be free.
           </p>
 
           {/* Action CTAs */}
@@ -81,7 +84,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="px-8 py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-xl hover:opacity-95 active:scale-95 group cursor-pointer text-slate-950"
               style={{ backgroundColor: themeConfig.primaryAccent }}
             >
-              <span>Take Style Quiz</span>
+              <span>Try the Interactive Demo</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
             <button
@@ -89,7 +92,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               className="glass-panel px-8 py-3.5 rounded-full font-bold text-sm sm:text-base hover:opacity-100 transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 cursor-pointer opacity-85"
             >
               <Layers className="w-4 h-4 opacity-75" />
-              <span>Browse Outfits</span>
+              <span>See Sample Outfits</span>
             </button>
           </div>
 
@@ -97,7 +100,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="pt-4 border-t border-white/10">
             <div className="text-xs font-semibold uppercase tracking-wider opacity-75 mb-3 flex items-center gap-1.5 font-mono">
               <Sparkles className="w-3.5 h-3.5" style={{ color: themeConfig.primaryAccent }} />
-              <span>Click to preview sample outfits:</span>
+              <span>See what a shopper sees at the kiosk:</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {HERO_LOOK_PRESETS.map((preset, idx) => (
@@ -149,10 +152,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Gradient Lighting and Deep Shadow Overlays */}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
-          {/* Upper Right Boutique Status Pill */}
+          {/* Upper Right Kiosk Status Pill */}
           <div className="absolute top-6 right-6 glass-panel-elevated px-4 py-2 rounded-full flex items-center gap-2 border shadow-lg text-xs font-semibold backdrop-blur-xl">
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: themeConfig.primaryAccent }}></span>
-            <span>Matched to Real Store Stock</span>
+            <span>Live In-Store Kiosk Preview</span>
           </div>
 
           {/* Floating UI Element */}
@@ -185,7 +188,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <div className="mt-3 pt-2.5 border-t border-white/10 flex items-center justify-between text-[11px]">
               <span className="flex items-center gap-1 text-emerald-400 font-medium">
                 <CheckCircle2 className="w-3.5 h-3.5" />
-                In Stock in Your Size
+                {activePreset.pieces}
               </span>
               <span className="font-mono opacity-80 text-[10px]">Complete Outfit</span>
             </div>
@@ -193,27 +196,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
 
-      {/* Trust & Performance Bar */}
+      {/* Trust & Market Context Bar */}
       <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div className="p-3">
-          <div className="text-2xl md:text-3xl font-bold font-mono">Live</div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Checked Against Real Store Stock</div>
+          <div className="text-2xl md:text-3xl font-bold font-mono">$497M</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Sri Lanka's Fashion E-Commerce Market (2024)</div>
         </div>
         <div className="p-3">
           <div className="text-2xl md:text-3xl font-bold font-mono" style={{ color: themeConfig.primaryAccent }}>
-            Instant
+            80%+
           </div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Size & Sizing Check</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Of Fashion Shopping Still Happens In-Store</div>
         </div>
         <div className="p-3">
-          <div className="text-2xl md:text-3xl font-bold font-mono">No Login</div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Anonymous, One-Time Sessions</div>
+          <div className="text-2xl md:text-3xl font-bold font-mono">$5B+</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Sri Lanka's Apparel & Textile Industry</div>
         </div>
         <div className="p-3">
           <div className="text-2xl md:text-3xl font-bold font-mono" style={{ color: themeConfig.secondaryAccent }}>
-            New
+            Now Onboarding
           </div>
-          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Now Onboarding Pilot Stores</div>
+          <div className="text-xs md:text-sm opacity-70 mt-1 font-medium">Pilot Retail Partners in Sri Lanka</div>
         </div>
       </div>
     </section>

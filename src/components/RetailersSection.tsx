@@ -1,5 +1,5 @@
 import React from 'react';
-import { Store, TrendingUp, RefreshCw, ArrowRight, Code } from 'lucide-react';
+import { Store, ShoppingBag, RefreshCw, ArrowRight, Wrench } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 
 interface RetailersSectionProps {
@@ -20,33 +20,38 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
           StyleCue for <span style={{ color: themeConfig.primaryAccent }}>Fashion Brands & Stores</span>
         </h2>
         <p className="text-base md:text-lg opacity-80 max-w-2xl mx-auto font-normal">
-          Help your shoppers buy complete matching outfits and choose the exact right size the first time.
+          Help your shoppers walk out with complete, matching outfits — sized right the first time.
         </p>
       </div>
 
-      {/* Who StyleCue Is Built For */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-16">
-        {['Boutique Stores', 'Fashion Chains', 'Department Stores', 'Streetwear Shops', 'Formalwear Outlets', 'Multi-Brand Retailers'].map((category) => (
-          <div
-            key={category}
-            className="glass-panel p-5 rounded-2xl border hover:border-opacity-100 transition-all text-center group flex items-center justify-center shadow-md"
-          >
-            <span className="font-bold text-xs tracking-widest uppercase transition-colors" style={{ color: themeConfig.primaryAccent }}>
-              {category}
-            </span>
+      {/* What the kiosk gives your store */}
+      <div className="glass-panel p-8 sm:p-10 rounded-3xl border mb-16 shadow-xl">
+        <h3 className="text-lg font-bold mb-6 text-center">What Your Store Gets</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+          <div className="space-y-2">
+            <div className="text-sm font-semibold" style={{ color: themeConfig.primaryAccent }}>An In-Store Kiosk</div>
+            <p className="text-xs opacity-70 leading-relaxed">A physical AI styling kiosk on your shop floor, matched to your store's own inventory.</p>
           </div>
-        ))}
+          <div className="space-y-2">
+            <div className="text-sm font-semibold" style={{ color: themeConfig.primaryAccent }}>A Staff Dashboard</div>
+            <p className="text-xs opacity-70 leading-relaxed">Your team sees each shopper's picks and brings the right items straight to the fitting room.</p>
+          </div>
+          <div className="space-y-2">
+            <div className="text-sm font-semibold" style={{ color: themeConfig.primaryAccent }}>Your Own Catalog</div>
+            <p className="text-xs opacity-70 leading-relaxed">The kiosk recommends only what's actually on your shelves — nothing from anywhere else.</p>
+          </div>
+        </div>
       </div>
 
-      {/* Retail Value Cards */}
+      {/* What we're building toward (MVP-stage, honest framing) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <div className="glass-panel-elevated p-8 rounded-3xl border relative overflow-hidden shadow-xl">
           <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6">
-            <TrendingUp className="w-6 h-6" />
+            <ShoppingBag className="w-6 h-6" />
           </div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Bigger Basket Size</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Complete Outfits, Not Single Items</h4>
           <p className="text-sm opacity-80">
-            Shoppers get matched to complete outfits instead of single items, encouraging larger purchases.
+            Shoppers see a full matching outfit instead of one item at a time — designed to grow basket size.
           </p>
         </div>
 
@@ -54,9 +59,9 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
           <div className="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-6">
             <RefreshCw className="w-6 h-6" />
           </div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Fewer Sizing Mistakes</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Sized Before They Buy</h4>
           <p className="text-sm opacity-80">
-            Recommendations are matched against real stock and sizing, cutting down on fit-related issues.
+            Matching size to measurements at the kiosk, before checkout, aims to cut down fit-related returns.
           </p>
         </div>
 
@@ -65,11 +70,11 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
             className="w-12 h-12 rounded-2xl flex items-center justify-center mb-6"
             style={{ backgroundColor: `${themeConfig.primaryAccent}20`, color: themeConfig.primaryAccent }}
           >
-            <Code className="w-6 h-6" />
+            <Wrench className="w-6 h-6" />
           </div>
-          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Simple Store Onboarding</h4>
+          <h4 className="text-lg font-bold mb-2" style={{ color: themeConfig.primaryAccent }}>Hands-On Setup, Together</h4>
           <p className="text-sm opacity-80">
-            We work with your team to connect your existing product catalog to the kiosk.
+            We're in early access — our team works directly with you to install the kiosk and load your catalog.
           </p>
         </div>
       </div>
@@ -78,10 +83,10 @@ export const RetailersSection: React.FC<RetailersSectionProps> = ({ onOpenRetail
       <div className="glass-panel p-8 sm:p-10 rounded-3xl border flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
         <div className="space-y-1 text-center sm:text-left">
           <h3 className="text-xl font-bold">
-            Want to partner with StyleCue?
+            Want to be one of our first retail partners?
           </h3>
           <p className="text-sm opacity-75">
-            Book a quick 15-minute call with our retail team to learn more.
+            Book a quick 15-minute call with our team to learn more.
           </p>
         </div>
 

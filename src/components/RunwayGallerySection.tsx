@@ -28,13 +28,13 @@ export const RunwayGallerySection: React.FC = () => {
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border text-xs uppercase tracking-widest font-mono mb-3">
             <Sparkles className="w-3.5 h-3.5" style={{ color: themeConfig.primaryAccent }} />
-            Fashion Shows & Trends
+            Style Inspiration
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
-            Latest <span style={{ color: themeConfig.primaryAccent }}>Fashion Feed</span>
+            Trend <span style={{ color: themeConfig.primaryAccent }}>Inspiration Feed</span>
           </h2>
           <p className="text-base opacity-75 mt-2 max-w-xl">
-            See trending styles and outfit ideas from fashion shows in Milan, Paris, Tokyo, and London.
+            Global fashion trends our AI draws on when matching outfits at the kiosk — for inspiration, not items for sale here.
           </p>
         </div>
 
@@ -174,7 +174,7 @@ export const RunwayGallerySection: React.FC = () => {
                       Stylist Tip:
                     </span>
                     <p className="text-xs sm:text-sm opacity-80 leading-relaxed">
-                      {activePhoto.stylistNote} Our AI finds matching in-stock clothes that fit your exact body shape and size.
+                      {activePhoto.stylistNote} Our AI translates trends like this into outfits already on your store's shelves.
                     </p>
                   </div>
 
@@ -198,7 +198,7 @@ export const RunwayGallerySection: React.FC = () => {
                   className="w-full py-3.5 rounded-full text-xs font-bold font-mono tracking-wider uppercase text-slate-900 transition-all shadow-lg active:scale-95 cursor-pointer"
                   style={{ backgroundColor: themeConfig.primaryAccent }}
                 >
-                  Find Clothes Like This in My Size
+                  See This Trend at Your Kiosk — Book a Demo
                 </button>
               </div>
             </div>

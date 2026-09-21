@@ -39,7 +39,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
           <div className="flex items-center gap-2.5">
             <BrandLogo className="w-6 h-6" label="StyleCue" />
             <span className="font-bold text-sm uppercase tracking-wider">
-              StyleCue <span style={{ color: themeConfig.primaryAccent }}>Account</span>
+              StyleCue <span style={{ color: themeConfig.primaryAccent }}>Retailer Portal</span>
             </span>
           </div>
           <button
@@ -76,7 +76,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               backgroundColor: mode === 'signup' ? themeConfig.primaryAccent : undefined
             }}
           >
-            Create Account
+            Request Access
           </button>
         </div>
 
@@ -86,13 +86,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <div className="py-12 text-center space-y-3">
               <CheckCircle className="w-12 h-12 text-emerald-400 mx-auto animate-bounce" />
               <h4 className="text-lg font-bold">Signed In Successfully</h4>
-              <p className="text-xs opacity-75">Loading your saved outfits and preferences...</p>
+              <p className="text-xs opacity-75">Loading your store dashboard...</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-xs font-semibold uppercase tracking-wider opacity-75 mb-1.5 font-mono">
-                  Email Address
+                  Work Email
                 </label>
                 <div className="relative">
                   <Mail className="w-4 h-4 opacity-50 absolute left-3.5 top-3" />
@@ -101,7 +101,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="yourname@example.com"
+                    placeholder="you@yourstore.com"
                     className="w-full glass-panel border border-white/15 rounded-xl pl-10 pr-4 py-2.5 text-xs focus:outline-none focus:border-opacity-100"
                   />
                 </div>
@@ -131,12 +131,12 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                   style={{ backgroundColor: themeConfig.primaryAccent }}
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>{mode === 'login' ? 'Sign In' : 'Create Free Account'}</span>
+                  <span>{mode === 'login' ? 'Sign In' : 'Request Store Access'}</span>
                 </button>
               </div>
 
               <p className="text-[11px] opacity-60 text-center pt-2 font-mono">
-                Your personal sizing and style details remain completely private.
+                Your store's data stays private to your account.
               </p>
             </form>
           )}

@@ -24,7 +24,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
           How <span style={{ color: themeConfig.primaryAccent }}>StyleCue</span> Works
         </h2>
         <p className="text-base md:text-lg opacity-80 max-w-2xl mx-auto font-normal">
-          In just 4 easy steps, get personalized outfits that match your style, body shape, and budget.
+          In just 4 easy steps, your customers get personalized outfits matched to their style, body shape, and budget — right at the kiosk.
         </p>
       </div>
 
@@ -96,13 +96,13 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
               <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
                 <Check className="w-3.5 h-3.5" />
               </div>
-              <span className="opacity-90">Matched directly against the store's own real-time stock</span>
+              <span className="opacity-90">Sizing calibrated to the brands your store actually carries</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
               <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
                 <Check className="w-3.5 h-3.5" />
               </div>
-              <span className="opacity-90">Live store checks so recommended sizes are always in stock</span>
+              <span className="opacity-90">Live checks against your store's own stock, right at the kiosk</span>
             </div>
             <div className="flex items-center gap-3 text-sm">
               <div className="w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
@@ -118,7 +118,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
               className="text-slate-900 px-8 py-3.5 rounded-full font-bold text-sm transition-all flex items-center gap-2 shadow-xl hover:opacity-90 active:scale-95 cursor-pointer"
               style={{ backgroundColor: themeConfig.primaryAccent }}
             >
-              <span>Take the 1-Minute Quiz</span>
+              <span>Book a Demo</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -148,7 +148,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onStartQui
               <span className="text-[10px] opacity-75 font-mono">Live Inventory Check</span>
             </div>
             <p className="text-xs opacity-90 leading-normal">
-              Connected in real time with the store's own inventory, so your size is ready to try on.
+              Connected in real time with your store's own inventory — right at the kiosk.
             </p>
           </div>
         </div>

@@ -25,10 +25,10 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const navLinks = [
     { name: 'How It Works', id: 'how-it-works' },
-    { name: 'Try Stylist', id: 'live-stylist' },
-    { name: 'Outfits', id: 'lookbooks' },
-    { name: 'Fashion Feed', id: 'runway-feed' },
-    { name: 'For Stores', id: 'for-retailers' },
+    { name: 'See It In Action', id: 'live-stylist' },
+    { name: 'Sample Looks', id: 'lookbooks' },
+    { name: 'In The Press', id: 'runway-feed' },
+    { name: 'For Retailers', id: 'for-retailers' },
     { name: 'About Us', id: 'about-us' }
   ];
 
@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           })}
         </nav>
 
-        {/* Right Action Header Bar: Light / Dark Toggle + Sign In + Get Started */}
+        {/* Right Action Header Bar: Light / Dark Toggle + Retailer Sign In + Book a Demo */}
         <div className="hidden sm:flex items-center gap-3 flex-shrink-0">
           <ThemeSelector />
 
@@ -90,16 +90,16 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="text-xs sm:text-sm font-semibold transition-colors px-3 py-1.5 opacity-80 hover:opacity-100 cursor-pointer"
             style={{ color: themeConfig.primaryAccent }}
           >
-            Sign In
+            Retailer Sign In
           </button>
 
           <button
-            onClick={onOpenQuiz}
+            onClick={onOpenRetailer}
             className="px-5 py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all duration-200 flex items-center gap-1.5 shadow-md active:scale-95 cursor-pointer text-slate-900"
             style={{ backgroundColor: themeConfig.primaryAccent }}
           >
             <Sparkles className="w-4 h-4" />
-            <span>Get Started</span>
+            <span>Book a Demo</span>
           </button>
         </div>
 
@@ -148,18 +148,18 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full text-center text-xs font-semibold py-2.5 rounded-xl border border-white/15"
               style={{ color: themeConfig.primaryAccent }}
             >
-              Sign In
+              Retailer Sign In
             </button>
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
-                onOpenQuiz();
+                onOpenRetailer();
               }}
               className="w-full font-bold py-3 rounded-full text-xs flex items-center justify-center gap-2 shadow-lg text-slate-900"
               style={{ backgroundColor: themeConfig.primaryAccent }}
             >
               <Sparkles className="w-4 h-4" />
-              <span>Take Style Quiz</span>
+              <span>Book a Demo</span>
             </button>
           </div>
         </div>

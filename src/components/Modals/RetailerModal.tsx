@@ -52,15 +52,15 @@ export const RetailerModal: React.FC<RetailerModalProps> = ({ isOpen, onClose })
               <CheckCircle2 className="w-12 h-12 text-emerald-400 mx-auto animate-bounce" />
               <h4 className="text-xl font-bold">Request Received!</h4>
               <p className="text-xs opacity-75 max-w-sm mx-auto leading-relaxed">
-                Our retail team will reach out within 4 business hours to help you connect your store catalog.
+                Our team will reach out within 1–2 business days to talk through a kiosk pilot for your store.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-1">
-                <h3 className="text-lg font-bold">Connect Your Store to StyleCue</h3>
+                <h3 className="text-lg font-bold">Bring a Kiosk to Your Store</h3>
                 <p className="text-xs opacity-75">
-                  Let shoppers discover and buy your items as complete matching outfits.
+                  Give your shoppers an AI styling kiosk matched to your store's own inventory.
                 </p>
               </div>
 
@@ -103,7 +103,7 @@ export const RetailerModal: React.FC<RetailerModalProps> = ({ isOpen, onClose })
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs font-semibold uppercase tracking-wider opacity-75 mb-1.5 font-mono">
-                    Website URL
+                    Website or Social Page
                   </label>
                   <div className="relative">
                     <Globe className="w-4 h-4 opacity-50 absolute left-3.5 top-3" />
@@ -120,17 +120,17 @@ export const RetailerModal: React.FC<RetailerModalProps> = ({ isOpen, onClose })
 
                 <div>
                   <label className="block text-xs font-semibold uppercase tracking-wider opacity-75 mb-1.5 font-mono">
-                    Catalog Size
+                    Approximate Product Count
                   </label>
                   <select
                     value={skuCount}
                     onChange={(e) => setSkuCount(e.target.value)}
                     className="w-full glass-panel border border-white/15 rounded-xl px-3 py-2.5 text-xs focus:outline-none bg-black/80"
                   >
+                    <option value="Under 1k Items">Under 1k Items</option>
                     <option value="1k – 10k Items">1k – 10k Items</option>
-                    <option value="10k – 100k Items">10k – 100k Items</option>
-                    <option value="100k+ Items">100k+ Items</option>
-                    <option value="Boutique / Independent Brand">Boutique / Independent Brand</option>
+                    <option value="10k+ Items">10k+ Items</option>
+                    <option value="Boutique / Independent Store">Boutique / Independent Store</option>
                   </select>
                 </div>
               </div>
@@ -142,12 +142,12 @@ export const RetailerModal: React.FC<RetailerModalProps> = ({ isOpen, onClose })
                   style={{ backgroundColor: themeConfig.primaryAccent }}
                 >
                   <Sparkles className="w-4 h-4" />
-                  <span>Request Store Integration</span>
+                  <span>Request a Pilot</span>
                 </button>
               </div>
 
               <p className="text-[11px] opacity-60 text-center font-mono">
-                Easy setup in under 24 hours with Shopify, WooCommerce, or custom e-commerce stores.
+                We're onboarding early partners by hand — our team will walk you through setup directly.
               </p>
             </form>
           )}

@@ -39,13 +39,13 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onStartStyling
         <div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-panel border text-xs uppercase tracking-widest font-mono mb-3">
             <Sparkles className="w-3.5 h-3.5" style={{ color: themeConfig.primaryAccent }} />
-            Ready-to-Wear Outfits
+            Sample Kiosk Outfits
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
             Popular <span style={{ color: themeConfig.primaryAccent }}>Outfit Ideas</span>
           </h2>
           <p className="text-base opacity-75 mt-2 max-w-xl">
-            Browse complete outfits put together for work, dinners, casual weekends, and travel.
+            Examples of complete outfits the AI stylist puts together for work, dinners, casual weekends, and travel.
           </p>
         </div>
 
@@ -230,7 +230,7 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onStartStyling
                           <img src={item.image} alt={item.name} className="w-10 h-10 rounded-lg object-cover bg-black" />
                           <div>
                             <div className="font-semibold">{item.name}</div>
-                            <div className="text-[11px] opacity-70">{item.brand} • <span style={{ color: themeConfig.secondaryAccent }}>{item.retailer}</span></div>
+                            <div className="text-[11px] opacity-70">{item.brand} • <span className="text-emerald-400">In Stock</span></div>
                           </div>
                         </div>
                         <div className="font-mono font-bold" style={{ color: themeConfig.primaryAccent }}>
@@ -259,7 +259,7 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({ onStartStyling
                     style={{ backgroundColor: themeConfig.primaryAccent }}
                   >
                     <Sparkles className="w-4 h-4" />
-                    <span>Get Outfit in My Size</span>
+                    <span>Book a Demo to See This Live</span>
                   </button>
                 </div>
               </div>
