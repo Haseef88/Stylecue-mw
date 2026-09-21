@@ -423,28 +423,28 @@ export const STYLING_BENEFITS = [
     iconName: 'person_search',
     title: 'Outfits Made Just for You',
     description: 'Our smart AI learns what styles, colors, and cuts you love, so every recommendation feels natural and comfortable for you.',
-    stat: '98%',
-    statLabel: 'Outfit satisfaction rate',
+    stat: 'Smart Match',
+    statLabel: 'Personalized to your body, taste, and size',
     imageUrl: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80',
-    details: 'The more you use it, the better it gets at finding pieces that match your taste, body type, and daily routine.'
+    details: 'The more details you share at the kiosk, the better it gets at finding pieces that match your taste, body type, and the occasion.'
   },
   {
     id: 'b2',
     iconName: 'inventory_2',
     title: 'In-Stock in Your Size',
     description: "The kiosk checks directly against that store's own inventory, so every item shown is available in your size right now.",
-  stat: 'Live',
-  statLabel: 'Checked against real store stock',
-  imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80',
-  details: 'No more disappointment from a suggested size or item that turns out to be sold out — recommendations only ever come from what the store actually has.'
+    stat: 'Live',
+    statLabel: 'Checked against real store stock',
+    imageUrl: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80',
+    details: 'No more disappointment from a suggested size or item that turns out to be sold out — recommendations only ever come from what the store actually has.'
   },
   {
     id: 'b3',
     iconName: 'diamond',
     title: 'Wear Outfits with Confidence',
     description: 'Get clear, easy tips on how to pair tops, pants, jackets, shoes, and accessories together for any occasion.',
-    stat: '10 mins',
-    statLabel: 'Saved every morning getting ready',
+    stat: 'Full Outfit',
+    statLabel: 'Not just single items',
     imageUrl: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80',
     details: 'Helpful advice for work meetings, casual weekend dinners, parties, weddings, and travel.'
   }
